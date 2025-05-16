@@ -1,8 +1,20 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../models/User");
+const Validationschema = require("../Validation");
 
-router.post("/createuser",async(req,res)=>{
+const UserValidation =(req,res,next)=>{
+   const {error} = Validationschema.validate(req.body);
+   if(error){
+   const result = error.details.map(el=>el.message);
+    console.log(result);
+   }
+   else{
+    next();
+   }
+}
+
+router.post("/createuser",UserValidation,async(req,res)=>{
    const {name, password, email, location} = req.body;
     try{
         const UserData = new User({ 

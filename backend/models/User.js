@@ -10,7 +10,7 @@ const UserSchema = new Schema({
 },
 location:{
     type:String,
-    required: true
+    // required: true
 },
 email:{
     type:String,
@@ -18,7 +18,7 @@ email:{
 },
 password:{
     type:String,
-    required:true
+    // required:true
 },
 date:{
     type:Date,

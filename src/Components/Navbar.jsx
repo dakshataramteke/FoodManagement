@@ -32,11 +32,11 @@ const Navbar = () => {
                   Login
                 </Link>
               </li>
-              {/* <li className="nav-item">
-                <Link className="nav-link" to={"/pricing"}>
-                  Pricing
+              <li className="nav-item">
+                <Link className="nav-link text-white" to={"/createuser"}>
+                  Sign Up
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
           {/* OffCanvas Mobile View */}
@@ -69,11 +69,11 @@ const Navbar = () => {
                 Login
                 </Link>
               </li>
-              {/* <li className="nav-item">
-                <Link className="nav-link" to={"/pricing"}>
-                  Pricing
+              <li className="nav-item">
+                <Link className="nav-link text-white" to={"/createuser"}>
+                  Sign up
                 </Link>
-              </li> */}
+              </li>
             </ul>
             </div>
 

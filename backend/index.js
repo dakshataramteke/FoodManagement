@@ -1,11 +1,13 @@
 const express = require("express");
 const MongoConnection = require("./models/db");
 const CreateUser = require("./Routes/CreateUser");
+const cors = require("cors");
 const app = express();
 const port = 5000;
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+app.use(cors("http://localhost:5173"));
 app.use("/api", CreateUser);
 
 app.get("/",(req,res)=>{

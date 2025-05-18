@@ -4,3 +4,6 @@ body{
 .carousel-inner img{
     height: calc(100vh - 80px);
 }
+.form-control:focus{
+    box-shadow: none;
+}

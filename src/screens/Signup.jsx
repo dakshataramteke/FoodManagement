@@ -9,15 +9,24 @@ const Signup = () => {
         password:"",
         location:""
     })
+
       const onChangeValue = (event)=>{
        const res=  setCredentials({...credentails,[event.target.name]: event.target.value});
         console.log(res);
     }
+
     const handleSubmit = async(e)=>{
         e.preventDefault();
         const response = await axios.post("http://localhost:5000/api/createuser", credentails)
       console.log(response.data);
-    //   console.log(credentails);
+      alert("User Created ..");
+      setCredentials({
+        name:"",
+        email:"",
+        password:"",
+        location:""
+      })
+      console.log(credentails);
     }
 
   

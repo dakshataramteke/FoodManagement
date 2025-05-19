@@ -20,6 +20,7 @@ const Login = () => {
   
     if (response.data.success) { // Adjust this condition based on your API response
       // Login successful
+      localStorage.setItem("authToken", response.data.token); // Store the token in local storage
       alert("Login Successful");
       setLogin({ email: "", password: "" });
       navigate("/");

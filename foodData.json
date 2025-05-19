@@ -2,7 +2,7 @@
   {
     "CategoryName": "Pizza",
     "name": "Margherita",
-    "img": "https://images.unsplash.com/photo-1601924638867-3ec2f3607b7f?auto=format&fit=crop&w=800&q=80",
+    "img": "https://media.istockphoto.com/id/1393150881/photo/italian-pizza-margherita-with-cheese-and-tomato-sauce-on-the-board-on-grey-table-macro-close.jpg?s=612x612&w=0&k=20&c=kL0Vhg2XKBjEl__iG8sFv31WTiahdpLc3rTDtNZuD2g=",
     "options": {
       "half": "130",
       "full": "220"
@@ -12,7 +12,7 @@
   {
     "CategoryName": "Pizza",
     "name": "Pepperoni",
-    "img": "https://images.unsplash.com/photo-1548365328-ff035be1a181?auto=format&fit=crop&w=800&q=80",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjIg7PcaSk1ypBemQ0CcziyjsS4K8UJKZbCQ&s",
     "options": {
       "half": "170",
       "full": "280"
@@ -22,7 +22,7 @@
   {
     "CategoryName": "Burgers",
     "name": "Cheeseburger",
-    "img": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
+    "img": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hlZXNlJTIwYnVyZ2VyfGVufDB8fDB8fHww",
     "options": {
       "half": "90",
       "full": "160"
@@ -42,7 +42,7 @@
   {
     "CategoryName": "Desserts",
     "name": "Chocolate Brownie",
-    "img": "https://images.unsplash.com/photo-1611869313359-c937d6b4b867?auto=format&fit=crop&w=800&q=80",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn1diZlXCIvheW_eUZBXyZUW_6AR_3vZQ4DA&s",
     "options": {
       "half": "105",
       "full": "230"
@@ -52,12 +52,33 @@
   {
     "CategoryName": "Desserts",
     "name": "Cheesecake",
-    "img": "https://images.unsplash.com/photo-1505253210343-e9000a5d6f96?auto=format&fit=crop&w=800&q=80",
+    "img": "https://liliyum.com/cdn/shop/products/Newyork-CheeseCake-1_7cf9b5d9-5bf1-4bec-9aa1-c9193b2ba01d.jpg?v=1589960210",
     "options": {
       "half": "50",
       "full": "80"
     },
     "description": "Smooth and creamy cheesecake with a buttery graham cracker crust."
+  },
+     
+  {
+    "CategoryName": "Desserts",
+    "name": "Tiramisu",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYYEJ7Wl7bG8P535PfYj7UDdn3vBpF7ECCzw&s",
+    "options": {
+      "half": "120",
+      "full": "250"
+    },
+    "description": "Classic Italian dessert made with coffee-soaked ladyfingers and mascarpone cheese."
+  },
+  {
+    "CategoryName": "Desserts",
+    "name": "Fruit Tart",
+    "img": "https://earthly-provisions.com/wp-content/uploads/2024/05/Vegan-Fruit-Tart-1-2.jpg",
+    "options": {
+      "half": "90",
+      "full": "160"
+    },
+    "description": "A buttery tart filled with pastry cream and topped with fresh seasonal fruits."
   }
 ]
 

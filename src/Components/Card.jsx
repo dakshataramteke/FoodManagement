@@ -1,47 +1,57 @@
-import React from 'react'
-import Burger from '../assets/Food/burger.jpg'
-const Card = () => {
-  return (
-    <>
-     
-        <div
-          className="card mt-3"
-          style={{ width: "18rem" }}
-        >
-          <img src={Burger} className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text .</p>
-            <div className="container ">
-              <select
-                className=" m-2 h-100 bg-success"
-                aria-label="Default select example"
-              >
-                {Array.from(Array(6), (e, i) => {
-                  return (
-                    <option key={i + 1} value={i + 1}>
-                      {i + 1}
-                    </option>
-                  );
-                })}
-              </select>
-              <select
+
+  import  { useEffect, useState } from 'react';
+  import axios from 'axios';
+
+  function Card() {
+      const [categories, setCategories] = useState([]);
+
+      useEffect(() => {
+          const fetchCategories = async () => {
+              const response = await axios.get('http://localhost:5000/api/foodData');
+              setCategories(response.data);
+              console.log(response.data);
+          };
+
+          fetchCategories();
+      }, []);
+
+      return (
+          <div className='container my-5'>
+              <h1 className='text-center my-4'>Food Categories</h1>
+              <div className='row'>
+                  {categories.map(category => (<>
+                  <div className='card m-2 p-2'   style={{ width: "18rem" }}>
+                        {/* <li key={category._id}>{category.categoryName}</li> */}
+                      <h4 className='text-center'>{category.name}</h4>
+                     <img src={category.img} className="rounded" style={{height:'260px'}}/>
+                     <select className='m-2 text-white bg-success rounded'>
+                        {
+                            Array.from(Array(6),(e,i)=>{
+                                return (
+                                    <option key={i+1} value={i+1}>{i+1}</option>
+                                )}
+                            )
+                        }
+                     </select>
+                     {/* <select
                 className=" m-2 h-100 bg-success rounded"
                 aria-label="Default select example"
               >
-               <option value="half">Half</option>
-               <option value="full">full</option>
-              </select>
+               <option value="half">{category.options}</option> */}
+               {/* <option value="full">full</option> */}
+              {/* </select> */}
 
-              <div className="d-inline fs-5">
-                Total Price
-              </div>
+                      <p className="mt-3">{category.description}</p>
+                   
+                  </div>
+ 
+                  </>
+                     
+                  ))}
             </div>
           </div>
-        </div>
-      
-    </>
-  )
-}
+      );
+  }
 
-export default Card
+  export default Card;
+  
